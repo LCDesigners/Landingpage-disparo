@@ -59,7 +59,7 @@ function startMessageSending() {
           currentResults.forEach((currentRow) => {
             const phoneNumber = currentRow.telefone + '@c.us';
             const message = currentRow.mensagem_envio;
-            const voiceMessagePath = 'http://localhost:8081/Audio-live-boas-vindas-live-robson-triches.mp3'; // Caminho do arquivo de áudio
+            const voiceMessagePath = 'https://especialistas.solucionati.ca/app/solucionatica/empresa/aplicacao/marketing_solucionatica/audios_mensagens/Audio-live-boas-vindas-live-robson-triches.mp3'; // Caminho do arquivo de áudio
 
             const sendTextPromise = client.sendText(phoneNumber, message);
             const sendVoicePromise = client.sendVoice(phoneNumber, voiceMessagePath);
