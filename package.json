@@ -4,7 +4,8 @@
   "description": "Disparador de mensagem - Solucionática",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"node disparo-lembretes.js\" \"node disparo-landingpages.js\""
+    "start": "node index.js",
+    "build": "echo 'No build step'"
   },
   "keywords": [
     "disparador",
