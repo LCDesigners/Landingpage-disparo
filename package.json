@@ -1,0 +1,23 @@
+{
+  "name": "disparador",
+  "version": "1.0.0",
+  "description": "Disparador de mensagem - Solucionática",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node disparo-lembretes.js\" \"node disparo-landingpages.js\""
+  },
+  "keywords": [
+    "disparador",
+    "solucionatica"
+  ],
+  "author": "Lucas",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "concurrently": "^8.0.1",
+    "googleapis": "^118.0.0",
+    "moment-timezone": "^0.5.43",
+    "mysql": "^2.18.1",
+    "venom-bot": "^5.0.1"
+  }
+}
